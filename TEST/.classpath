@@ -31,5 +31,7 @@
 	<classpathentry kind="var" path="ECLIPSE_OSGI_SVC"/>
 	<classpathentry kind="var" path="ECLIPSE_E4_CORE"/>
 	<classpathentry kind="con" path="com.sag.gcs.wmtestsuite.runtime.WmTestSuiteContainer"/>
+	<classpathentry kind="lib" path="C:/Users/sivasu.chavali/Downloads/junit-4.10.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/sivasu.chavali/Downloads/junit-4.11.jar/junit-4.11.jar"/>
 	<classpathentry kind="output" path="code/classes"/>
 </classpath>

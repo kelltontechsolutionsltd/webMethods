@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="Provider WS Test Suite" name="Calculator_Provider">
+    <webMethodsTestCase name="Success-Add">
+        <service folder="TEST.services" name="simpleCalculator">
+            <input>
+                <file filename="resources/test/data/Success-Add"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/Success-Add-Output"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="Success-add">
+        <service folder="TEST.services" name="simpleCalculator">
+            <input>
+                <file filename="resources/test/data/Fail-Second-Input-Null.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/Fail-Second-Input-Null-Output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="Fail-Add">
+        <service folder="TEST.services" name="simpleCalculator">
+            <input>
+                <file filename="resources/test/data/Fail-Second-Input-Null.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/Success-add-output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="Fail-InvalidOperation">
+        <service folder="TEST.services" name="simpleCalculator">
+            <input>
+                <file filename="resources/test/data/Fail-Second-Input-Null.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/Fail-Second-Input-Null-Output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="Client_Div_Success">
+        <service folder="TEST.services" name="simpleCalculator">
+            <input>
+                <file/>
+            </input>
+            <expected>
+                <file/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
